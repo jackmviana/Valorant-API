@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react"
+import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 import axios from 'axios'
 
 
 export default function Agents () {
 
     //we need to create a state for our data
-    const [agents, setAgents] = useState({})
+    const [agents, setAgents] = useState(null)
 
 
     //we need to call an axios function
@@ -42,23 +44,28 @@ export default function Agents () {
   
     const cards = [
       {
-        id: "1",
+        id: "0",
+        id2: "raze",
         image: "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/fullportrait.png",
       },
       {
-        id: "2",
+        id: "1",
+        id2: "sky",
         image: "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/fullportrait.png",
       },
       {
-        id: "3",
+        id: "2",
+        id2: "harbor",
         image: "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/fullportrait.png",
       },
       {
-        id: "4",
+        id: "3",
+        id2: "chamber",
         image: "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/fullportrait.png",
       },
       {
-        id: "5",
+        id: "4",
+        id2: "jett",
         image: "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/fullportrait.png",
       }
     ];
@@ -70,7 +77,11 @@ export default function Agents () {
       }, 3000);
     }, [index]);
   
+    let navigate = useNavigate()
 
+  const showAgent = () => {
+    navigate(`${index}`)
+  }
 
 
 
@@ -79,8 +90,12 @@ if (!agents) {
 } else {
     return (
         <div className="card-carousel">
+
+            <Link to='/'>
+              <button>Back</button>
+            </Link>
             
-            <div className="carousel">
+            <div onClick={(e) => showAgent(index)} className="carousel">
                 {cards.map((item, i) => {
                 const indexLeft = mod(index - 1, cards.length);
                 const indexRight = mod(index + 1, cards.length);
