@@ -140,7 +140,7 @@ video {
   right: 0;
   bottom: 0;
   left: 0;
-  margin: 100px auto;
+  margin: 250px auto;
   width: 300px;
   height: 500px;
   object-fit: cover;
@@ -163,25 +163,25 @@ video {
 
 .card--left--one {
   transform: translateX(-125%) scale(0.8);
-  transition: 1s;
+  transition: 0.7s;
   opacity: 0.8;
 }
 
 .card--left--two {
   transform: translateX(-175%) scale(0.8);
-  transition: 1s;
+  transition: 0.7s;
   opacity: 0.8;
 }
 
 .card--right--one {
   transform: translateX(+125%) scale(0.8);
-  transition: 1s;
+  transition: 0.7s;
   opacity: 0.8;
 }
 
 .card--right--two {
   transform: translateX(+175%) scale(0.8);
-  transition: 1s;
+  transition: 0.7s;
   opacity: 0.8;
 }
 
@@ -223,8 +223,11 @@ object-fit: cover;
 }
 
 .agent-image {
-  max-width: 150%;
+  min-width: 150%;
+  min-height: 100%;
+  max-width: 200%;
   max-height: 100%;
+  object-fit: relative;
 }
 
 .agent-image:hover {
@@ -253,6 +256,7 @@ object-fit: cover;
   border-radius: 20px;
   scale: 102%;
   box-shadow: 1px 1px 9px rgb(219, 219, 219);
+  cursor: pointer;
   transition: .2s ease-in-out;
 }
 
@@ -265,6 +269,7 @@ object-fit: cover;
   border-radius: 20px;
   scale: 102%;
   box-shadow: 1px 1px 9px rgb(219, 219, 219);
+  cursor: pointer;
   transition: .2s ease-in-out;
 }
 
@@ -277,6 +282,7 @@ object-fit: cover;
   border-radius: 20px;
   scale: 102%;
   box-shadow: 1px 1px 9px rgb(219, 219, 219);
+  cursor: pointer;
   transition: .2s ease-in-out;
 }
 
@@ -289,6 +295,7 @@ object-fit: cover;
   border-radius: 20px;
   scale: 102%;
   box-shadow: 1px 1px 9px rgb(219, 219, 219);
+  cursor: pointer;
   transition: .2s ease-in-out;
 }
 
