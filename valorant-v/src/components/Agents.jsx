@@ -86,14 +86,16 @@ export default function Agents () {
 
 
 if (!agents) {
-    return <h2>Loading</h2>
+    return <h2 className="loading">Loading</h2>
 } else {
     return (
         <div className="card-carousel">
 
+          <div className="button-div">
             <Link to='/'>
-              <button>Back</button>
+              <button className="button">BACK</button>
             </Link>
+          </div>
             
             <div onClick={(e) => showAgent(index)} className="carousel">
                 {cards.map((item, i) => {
