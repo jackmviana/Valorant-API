@@ -86,7 +86,7 @@ export default function Agents () {
 
 
 if (!agents) {
-    return <h2 className="loading">Loading</h2>
+    return <h2 className="loading">LOADING</h2>
 } else {
     return (
         <div className="card-carousel">

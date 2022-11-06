@@ -31,7 +31,9 @@ export default function Harbor () {
     const [show4, setShow4]=useState(false)
     
     
-
+    if (!Harbor) {
+        return <h2 className="loading">LOADING</h2>
+    } else {
     return !agents ? (
 
         <div> 
@@ -103,5 +105,5 @@ export default function Harbor () {
         </div>
     </div>
     
-}
+}}
 

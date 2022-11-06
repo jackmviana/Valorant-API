@@ -2,6 +2,10 @@ import { Link } from "react-router-dom"
 
 export default function Play () {
 
+
+    if (!Play) {
+        return <h2 className="loading">LOADING</h2>
+    } else {
     return (
         <div>
             
@@ -13,10 +17,14 @@ export default function Play () {
 
             <div className="playVal">
 
-                <button className="valbutton">PLAY VALORANT</button>
+            <form className="play-val-div" action="https://playvalorant.com/en-us/?gclid=CjwKCAjwtp2bBhAGEiwAOZZTuF_dOQdnHsELOKC3mr1nkR_deE5un3tLTkLKy0g1kP9pZNWSs6De9RoCi-UQAvD_BwE&gclsrc=aw.ds">
+                <input 
+                className="play-val"
+                type="submit" value="PLAY VALORANT" />
+            </form>
 
             </div>
 
         </div>
     )
-}
+}}

@@ -12,7 +12,7 @@ html {
   font-family: 'Inter', sans-serif;
   font-weight: 800;
   font-size: 50px;
-  color: #D9D9D9;
+  color: #FF4655;
   text-transform: uppercase;
 }
 
@@ -26,6 +26,7 @@ html {
   display: flex;
   font-family: 'Inter', sans-serif;
   font-weight: 800;
+  text-decoration: none;
   color: white;
   border: none;
   background-color: transparent;
@@ -67,6 +68,7 @@ video {
   color: #D9D9D9;
   text-decoration: none;
   font-style: italic;
+  text-align: left;
 }
 
 .playLink:hover {
@@ -84,6 +86,7 @@ video {
   color: #D9D9D9;
   text-decoration: none;
   font-style: italic;
+  text-align: left;
 }
 
 .agentLink:hover {
@@ -101,6 +104,7 @@ video {
   color: #D9D9D9;
   text-decoration: none;
   font-style: italic;
+  text-align: left;
 }
 
 .shopLink:hover {
@@ -118,6 +122,7 @@ video {
   color: #D9D9D9;
   text-decoration: none;
   font-style: italic;
+  text-align: left;
 }
 
 .settingsLink:hover {
@@ -126,6 +131,60 @@ video {
   text-decoration: none;
   transform: translateX(+45px);
   transition: .5s ease-in-out;
+}
+
+.play-val-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 200px auto;
+}
+
+.play-val {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  color: #D9D9D9;
+  background-color:#FF4655;
+  border: none;
+  border-radius: 10px;
+  height: 70px;
+  width: 300px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 #FF4655;
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px #e9e8e8;
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 #FF4655;
+	}
+}
+
+@keyframes pulse2 {
+	0% {
+		transform: scale(1.05);
+		box-shadow: 0 0 0 0 #FF4655;
+	}
+
+	70% {
+		transform: scale(1.10);
+		box-shadow: 0 0 0 10px #e9e8e8;
+	}
+
+	100% {
+		transform: scale(1.05);
+		box-shadow: 0 0 0 0 #FF4655;
+	}
 }
 
 .carousel {
@@ -140,7 +199,7 @@ video {
   right: 0;
   bottom: 0;
   left: 0;
-  margin: 250px auto;
+  margin: 200px auto;
   width: 300px;
   height: 500px;
   object-fit: cover;
@@ -158,7 +217,8 @@ video {
   box-shadow: 1px 12px 15px #e9e8e8;
   cursor: pointer;
   border-color: white;
-  border-width: 6px;
+  /* border-width: 6px; */
+  animation: pulse2 2s infinite;
 }
 
 .card--left--one {
@@ -350,4 +410,319 @@ object-fit: cover;
     color: #D9D9D9;
     font-style: italic;
     transition: .2s ease-in-out;
+  }
+
+  .shop-main {
+    background-image: url("./Assets/valorant-shop-background.jpeg");
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .shop-container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .item1 {
+    margin: 100px auto;
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    background-color: #1e2a55;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: #FF4655;
+  }
+
+  .item1:hover {
+    animation: pulse2 2s infinite;
+  }
+
+  .itemImage1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    width: 300px;
+  }
+
+  .bottom-card1 {
+    margin-top: 81px;
+    height: 182px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    box-shadow: 0px -4px 10px #cececd;
+  }
+
+  .item2 {
+    margin: 100px auto;
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    background-color: #1e2a55;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: #FF4655;
+  }
+
+  .item2:hover {
+    animation: pulse2 2s infinite;
+  }
+
+  .itemImage2 {
+    margin: 38px auto;
+    width: 180px;
+  }
+
+  .bottom-card2 {
+    margin-top: 14px;
+    height: 182px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    box-shadow: 0px -4px 10px #cececd;;
+  }
+
+  .item3 {
+    margin: 100px auto;
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    background-color: #1e2a55;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: #FF4655;
+  }
+
+  .item3:hover {
+    animation: pulse2 2s infinite;
+  }
+
+  .itemImage3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+    width: 300px;
+  }
+
+  .bottom-card3 {
+    margin-top: 86px;
+    height: 182px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    box-shadow: 0px -4px 10px #cececd;;
+  }
+
+  .item4 {
+    margin: 100px auto;
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    background-color: #1e2a55;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: #FF4655;
+  }
+
+  .item4:hover {
+    animation: pulse2 2s infinite;
+  }
+
+  .itemImage4 {
+    display: flex;
+    justify-content: center;
+    margin: 60px auto;
+    width: 140px;
+  }
+
+  .bottom-card4 {
+    margin-top: 61px;
+    height: 182px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    box-shadow: 0px -4px 10px #cececd;;
+  }
+
+  .vp {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    gap: 5px;
+  }
+
+  .vp-image {
+    
+    height: 30px;
+    width: 30px;
+  }
+
+  .vp-price {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 26px;
+    font-style: italic;
+    color: #cececd;
+  }
+
+  .shop-text {
+    margin: 10px ;
+  }
+
+  .si1h1 {
+    margin-right: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    font-style: italic;
+    color: #FF4655;
+    text-shadow: 5px 4px 1px rgb(61, 59, 59),
+    10px 8px 1px black;
+  }
+
+  .si1h2 {
+    margin-right: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    font-style: italic;
+    text-shadow: 4px 3px 1px rgb(96, 94, 94),
+    8px 6px 1px #FF4655;
+  }
+
+  .si2h1 {
+    margin-right: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    font-style: italic;
+    color: #FF4655;
+    text-shadow: 5px 4px 1px rgb(61, 59, 59),
+    10px 8px 1px black;
+  }
+
+  .si2h2 {
+    margin-right: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    font-style: italic;
+    text-shadow: 4px 3px 1px rgb(96, 94, 94),
+    8px 6px 1px #FF4655;
+  }
+
+  .si3h1 {
+    margin-right: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    font-style: italic;
+    color: #FF4655;
+    text-shadow: 4px 3px 1px rgb(61, 59, 59),
+    8px 6px 1px black;
+  }
+
+  .si3h2 {
+    margin-right: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    font-style: italic;
+    text-shadow: 4px 3px 1px rgb(96, 94, 94),
+    8px 6px 1px #FF4655;
+  }
+
+  .si4h1 {
+    margin-right: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    font-style: italic;
+    color: #FF4655;
+    text-shadow: 5px 4px 1px rgb(61, 59, 59),
+    10px 8px 1px black;
+  }
+
+  .si4h2 {
+    margin-right: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    font-style: italic;
+    text-shadow: 4px 3px 1px rgb(96, 94, 94),
+    8px 6px 1px #FF4655;
+  }
+
+.theme-header {
+  margin-top: 50px;
+}
+
+  .theme-h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    color: #FF4655;
+  }
+
+  .color-picker {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 100px;
+  }
+
+  .red {
+    height: 70px;
+    width: 70px;
+    border-radius: 15px;
+    border: none;
+    background-color: #FF4655;
+  }
+
+  .red:hover {
+    scale: 110%;
+    transition: .5s ease;
+  }
+
+  .blue {
+    height: 70px;
+    width: 70px;
+    border-radius: 15px;
+    border: none;
+    background-color: #009BFF;
+  }
+
+  .blue:hover {
+    scale: 110%;
+    transition: .5s ease;
+  }
+
+  .purple {
+    height: 70px;
+    width: 70px;
+    border-radius: 15px;
+    border: none;
+    background-color: #7F73FF;
+  }
+
+  .purple:hover {
+    scale: 110%;
+    transition: .5s ease;
+  }
+
+  .green {
+    height: 70px;
+    width: 70px;
+    border-radius: 15px;
+    border: none;
+    background-color: #00A820;
+  }
+
+  .green:hover {
+    scale: 110%;
+    transition: .5s ease;
   }
