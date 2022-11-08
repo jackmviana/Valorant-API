@@ -115,6 +115,24 @@ video {
   transition: .5s ease-in-out;
 }
 
+.loadoutLink {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  color: #D9D9D9;
+  text-decoration: none;
+  font-style: italic;
+  text-align: left;
+}
+
+.loadoutLink:hover {
+  scale: 105%;
+  color:#FF4655;
+  text-decoration: none;
+  transform: translateX(+45px);
+  transition: .5s ease-in-out;
+}
+
 .settingsLink {
   font-family: 'Inter', sans-serif;
   font-weight: 800;
@@ -725,4 +743,141 @@ object-fit: cover;
   .green:hover {
     scale: 110%;
     transition: .5s ease;
+  }
+
+  .loadout-boxes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    gap: 25px;
+  }
+
+  .lo-secondary {
+    width: 80px;
+    height: 80px;
+    background-color: #FF4655;
+    border-radius: 20px;
+  }
+
+  .lo-secondary-image {
+    max-width: 80px;
+    margin-top: 10px;
+  }
+
+  .lo-primary {
+    height: 80px;
+    width: 200px;
+    background-color: #FF4655;
+    border-radius: 20px;
+    object-fit: contain;
+  }
+
+  .lo-primary-image {
+    max-width: 200px;
+    margin-top: 15px;
+  }
+
+  .lo-melee {
+    width: 80px;
+    height: 80px;
+    background-color: #FF4655;
+    border-radius: 20px;
+  }
+
+  .lo-melee-image {
+    max-width: 70px;
+    margin-top: 10px;
+  }
+
+  .lo-buddy {
+    width: 80px;
+    height: 80px;
+    background-color: #FF4655;
+    border-radius: 20px;
+  }
+
+  .lo-buddy-image {
+    max-width: 70px;
+    margin-top: 10px;
+  }
+
+  .lo-spray {
+    width: 80px;
+    height: 80px;
+    background-color: #FF4655;
+    border-radius: 20px;
+  }
+
+  .lo-spray-image {
+    max-width: 70px;
+    margin-top: 3px;
+  }
+
+.lo-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+  .lo-item-box1 {
+    height: 80px;
+    width: 220px;
+    background-color: #FF4655;
+    border-radius: 20px;
+  }
+
+  .lo-item-image1 {
+    max-width: 210px;
+    max-height: 80px;
+  }
+
+  .lo-item-box2 {
+    height: 80px;
+    width: 220px;
+    background-color: #FF4655;
+    border-radius: 20px;
+  }
+
+  .lo-item-image2 {
+    max-width: 210px;
+    max-height: 80px;
+    margin-top: 10px;
+  }
+
+  .lo-item-box3 {
+    height: 80px;
+    width: 100px;
+    background-color: #FF4655;
+    border-radius: 20px;
+  }
+
+  .lo-item-image3 {
+    max-width: 80px;
+    max-height: 80px;
+    margin-top: 20px;
+  }
+
+  .lo-item-box4 {
+    height: 80px;
+    width: 80px;
+    background-color: #FF4655;
+    border-radius: 20px;
+  }
+
+  .lo-item-image4 {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .lo-item-box5 {
+    height: 80px;
+    width: 80px;
+    background-color: #FF4655;
+    border-radius: 20px;
+  }
+
+  .lo-item-image5 {
+    max-width: 65px;
+    max-height: 80px;
+    margin-top: 7px;
   }

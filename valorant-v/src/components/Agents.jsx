@@ -15,7 +15,6 @@ export default function Agents () {
 
         const getData = async () => {
             const response = await axios.get('https://valorant-api.com/v1/agents/dade69b4-4f5a-8528-247b-219e5a1facd6')
-             console.log(response.data)
             setAgents(response.data) 
         }
 
@@ -23,7 +22,6 @@ export default function Agents () {
     
     }, [])
 
-    console.log(agents)
     //we need to set state fo our datat
 
 
@@ -73,7 +71,6 @@ export default function Agents () {
     useEffect(() => {
       setTimeout(() => {
         setIndex((index + 1) % cards.length);
-        console.log(index);
       }, 3000);
     }, [index]);
   

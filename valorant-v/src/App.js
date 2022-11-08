@@ -2,6 +2,7 @@ import Home from './components/Home';
 import Play from "./components/Play"
 import Agents from './components/Agents'
 import Shop from './components/Shop'
+import Loadout from './components/Loadout';
 import Settings from './components/Settings'
 import Raze from './components/Raze';
 import Sky from './components/Sky';
@@ -23,6 +24,7 @@ function App() {
                 <Route path='/play' element={<Play />}/>
                 <Route path='/agents' element={<Agents />}/>
                 <Route path='/shop' element={<Shop />}/>
+                <Route path='/loadout' element={<Loadout />}/>
                 <Route path='/settings' element={<Settings />}/>
                 <Route path='/agents/0' element={<Raze />}/>
                 <Route path='/agents/1' element={<Sky />}/>

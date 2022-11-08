@@ -8,6 +8,7 @@ export default function Header () {
             <Link className="playLink" to="/play"> PLAY</Link>
             <Link className="agentLink" to="/agents">AGENTS</Link>
             <Link className="shopLink" to="/shop">SHOP</Link>
+            <Link className="loadoutLink" to="/loadout">LOADOUT</Link>
             <Link className="settingsLink" to="/settings">SETTINGS</Link>
         </div>
     )
