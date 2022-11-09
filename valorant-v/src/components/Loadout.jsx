@@ -22,7 +22,7 @@ export default function Loadout () {
     const [selectedMelee, setSelectedMelee] = useState({displayIcon: rk})
     const [selectedBuddy, setSelectedBuddy] = useState({displayIcon: b})
     const [selectedSpray, setSelectedSpray] = useState({displayIcon: s})
-    const [selectedPlayerCard, setSelectedPlayerCard] = useState({displayIcon: pc})
+    const [selectedPlayerCard, setSelectedPlayerCard] = useState({largeArt: pc})
 
 
     const [showComponent, setShowComponent] = useState(false)
@@ -107,8 +107,8 @@ export default function Loadout () {
 
                         <div className="player-card"
                             onClick={handleClick6}>
-                        {showComponent6 && <PlayerCard setSelectedPlayerCard={setSelectedPlayerCard}/>}
-                            <img  className="lo-playercard-image" src={selectedPlayerCard.displayIcon}/>
+                        
+                            <img  className="lo-playercard-image" src={selectedPlayerCard.largeArt}/>
 
                         </div>
 
@@ -146,11 +146,14 @@ export default function Loadout () {
                     </div>
 
                     <div className="loadout-item-list">
+
+                        {showComponent6 && <PlayerCard setSelectedPlayerCard={setSelectedPlayerCard}/>}
                         {showComponent && <Primary setSelectedPrimary={setSelectedPrimary}/>}
                         {showComponent2 && <Secondary setSelectedSecondary={setSelectedSecondary}/>}
                         {showComponent3 && <Melee setSelectedMelee={setSelectedMelee}/>}
                         {showComponent4 && <Buddy setSelectedBuddy={setSelectedBuddy}/>}
                         {showComponent5 && <Spray setSelectedSpray={setSelectedSpray}/>}
+                        
                     </div>
             </div>
 

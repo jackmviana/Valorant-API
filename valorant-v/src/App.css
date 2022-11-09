@@ -997,3 +997,23 @@ object-fit: cover;
     max-height: 80px;
     margin-top: 7px;
   }
+
+  .lo-item-box6 {
+    height: 80px;
+    width: 80px;
+    background-color: rgb(206, 203, 197, .5);
+    border: 2px solid #e9e8e8;
+    border-radius: 20px;
+  }
+
+  .lo-item-box6:hover {
+    scale: 110%;
+    background-color: rgb(255, 70, 85, .6);
+    transition: .3s ease-in;
+  }
+
+  .lo-item-image6 {
+    max-width: 65px;
+    max-height: 80px;
+    margin-top: 7px;
+  }
