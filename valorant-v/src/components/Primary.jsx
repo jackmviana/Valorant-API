@@ -10,7 +10,7 @@ export default function Primary (props) {
 
         const getData = async () => {
             const response = await axios.get('https://valorant-api.com/v1/weapons')
-             console.log(response.data.data[3].displayName)
+             console.log(response.data)
             setPrimary(response.data) 
         }
         
@@ -45,6 +45,24 @@ export default function Primary (props) {
             <div className="lo-item-box1" onClick={() => {props.setSelectedPrimary(primary.data[4])}}>
 
                <img src={primary.data[4].displayIcon} className="lo-item-image2"></img>
+
+            </div>
+
+            <div className="lo-item-box1" onClick={() => {props.setSelectedPrimary(primary.data[1])}}>
+
+               <img src={primary.data[1].displayIcon} className="lo-item-image2"></img>
+
+            </div>
+
+            <div className="lo-item-box1" onClick={() => {props.setSelectedPrimary(primary.data[3])}}>
+
+               <img src={primary.data[3].displayIcon} className="lo-item-image2"></img>
+
+            </div>
+
+            <div className="lo-item-box1" onClick={() => {props.setSelectedPrimary(primary.data[5])}}>
+
+               <img src={primary.data[5].displayIcon} className="lo-item-image2"></img>
 
             </div>
 

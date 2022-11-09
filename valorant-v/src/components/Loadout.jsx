@@ -6,11 +6,13 @@ import Secondary from "./Secondary"
 import Melee from "./Melee"
 import Buddy from "./Buddy"
 import Spray from "./Spray"
+import PlayerCard from "./PlayerCard"
 import rv from '../Assets/reaver-vandal.png'
 import iS from '../Assets/ion-sheriff.png'
 import rk from '../Assets/reaver-karambit.png'
 import b from "../Assets/buddy-image.png"
 import s from "../Assets/spray-image.png"
+import pc from "../Assets/playercard-image.png"
 
 
 export default function Loadout () {
@@ -20,7 +22,7 @@ export default function Loadout () {
     const [selectedMelee, setSelectedMelee] = useState({displayIcon: rk})
     const [selectedBuddy, setSelectedBuddy] = useState({displayIcon: b})
     const [selectedSpray, setSelectedSpray] = useState({displayIcon: s})
-
+    const [selectedPlayerCard, setSelectedPlayerCard] = useState({displayIcon: pc})
 
 
     const [showComponent, setShowComponent] = useState(false)
@@ -77,6 +79,13 @@ export default function Loadout () {
         setShowComponent5(true)
         }}
 
+    const handleClick6 = () =>{
+        if(showComponent6 === true){
+        setShowComponent6(false)
+        } else {
+        setShowComponent6(true)
+        }}
+
     
 
     if (!Loadout) {
@@ -94,15 +103,14 @@ export default function Loadout () {
 
             <div className="loadout-container">
 
-                    <div className="player-card">
+                    <div className="player-card-container">
 
-                        <img></img>
+                        <div className="player-card"
+                            onClick={handleClick6}>
+                        {showComponent6 && <PlayerCard setSelectedPlayerCard={setSelectedPlayerCard}/>}
+                            <img  className="lo-playercard-image" src={selectedPlayerCard.displayIcon}/>
 
-                    </div>
-
-                    <div className="player-title">
-
-                        <h2>Living Nightmare</h2>
+                        </div>
 
                     </div>
 

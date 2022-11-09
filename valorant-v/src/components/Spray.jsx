@@ -83,6 +83,24 @@ export default function Spray (props) {
 
             </div>
 
+            <div className="lo-item-box5" onClick={() => {props.setSelectedSpray(spray.data[157])}}>
+
+               <img src={spray.data[157].displayIcon} className="lo-item-image5"></img>
+
+            </div>
+
+            <div className="lo-item-box5" onClick={() => {props.setSelectedSpray(spray.data[142])}}>
+
+               <img src={spray.data[142].displayIcon} className="lo-item-image5"></img>
+
+            </div>
+
+            <div className="lo-item-box5" onClick={() => {props.setSelectedSpray(spray.data[147])}}>
+
+               <img src={spray.data[147].displayIcon} className="lo-item-image5"></img>
+
+            </div>
+
         </div>
 
     </div>
